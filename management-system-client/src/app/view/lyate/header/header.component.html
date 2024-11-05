@@ -4,25 +4,21 @@
     </button>
   
     <ul class="sidebar-menu p-2">
-      <li>
+      <li (click)="navigateTo('/')">
         <i class="fas fa-home"></i>
         <span [ngClass]="{ 'visible': !isCollapsed }" *ngIf="!isCollapsed">Home</span>
-        <a routerLink="/" *ngIf="isCollapsed"></a>
       </li>
-      <li>
+      <li (click)="navigateTo('/manegar-medico')">
         <i class="fas fa-user-md"></i>
         <span [ngClass]="{ 'visible': !isCollapsed }" *ngIf="!isCollapsed">Médico</span>
-        <a routerLink="/manegar-medico" *ngIf="isCollapsed"></a>
       </li>
-      <li>
+      <li (click)="navigateTo('/manegar-paciente')">
         <i class="fas fa-users"></i>
         <span [ngClass]="{ 'visible': !isCollapsed }" *ngIf="!isCollapsed">Paciente</span>
-        <a routerLink="/manegar-paciente" *ngIf="isCollapsed"></a>
       </li>
-      <li>
+      <li (click)="navigateTo('/configuracoes')">
         <i class="fas fa-cog"></i>
         <span [ngClass]="{ 'visible': !isCollapsed }" *ngIf="!isCollapsed">Configurações</span>
-        <a routerLink="/configuracoes" *ngIf="isCollapsed"></a>
       </li>
     </ul>
   </div>
