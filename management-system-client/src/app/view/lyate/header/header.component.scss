@@ -1,0 +1,88 @@
+/* Navbar estilo geral */
+.custom-navbar {
+    background-color: #2D523F; /* Verde escuro */
+    color: white;
+    padding: 10px 20px;
+}
+
+.img-logo {
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+/* Estilização dos links de navegação */
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Centraliza os links */
+    flex: 1; /* Permite que a seção dos links ocupe o espaço central */
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin: 0 15px; /* Margem entre os links */
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: white;
+    color: #2D523F;
+    border-radius: 15px;
+    padding: 8px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #3e6b54;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Estilização dos ícones no navbar */
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinha os ícones à direita */
+}
+
+.navbar-icons .icon {
+    color: white;
+    font-size: 1.1rem;
+    margin-left: 15px; /* Espaçamento entre os ícones */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.navbar-icons .icon:hover {
+    color: #a4d3a2; /* Verde claro ao passar o mouse */
+}
+
+/* Seção de informações do usuário (se necessário no futuro) */
+.user-info {
+    color: white;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.user-role {
+    font-size: 0.8em;
+    color: #c0c0c0;
+    display: block;
+    margin-top: -3px;
+}
+
+/* Inicial do usuário em círculo */
+.user-initial {
+    background-color: #4a5c4d;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 10px;
+}
