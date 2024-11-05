@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-    title = 'Minha Aplicação';
-    menuItems = ['Home', 'Sobre', 'Contato'];
+  isCollapsed = true;
+
+  toggleSidebar() {
+    this.isCollapsed = !this.isCollapsed;
+  }
 }
