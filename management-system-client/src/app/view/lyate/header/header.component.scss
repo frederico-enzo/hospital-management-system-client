@@ -8,7 +8,7 @@
     color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch; // Alinha os itens para ocupar toda a largura
     transition: width 0.3s ease;
   
     &.collapsed {
@@ -34,13 +34,12 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      align-items: center;
       margin-top: 20px;
   
       li {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start; // Alinha os ícones e textos à esquerda
         padding: 10px;
         width: 100%;
         font-size: 16px;
@@ -60,7 +59,7 @@
         span {
           white-space: nowrap;
           overflow: hidden;
-          transition: opacity 0.3s ease; // Adiciona transição de opacidade
+          transition: opacity 0.3s ease; // Transição de opacidade
           opacity: 0; // Inicialmente oculto
   
           &.visible {
@@ -69,4 +68,4 @@
         }
       }
     }
-  }  
+  }
