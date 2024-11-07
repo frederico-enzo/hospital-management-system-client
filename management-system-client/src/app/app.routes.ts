@@ -7,7 +7,7 @@ import { ManegerHomeComponent } from './view/componentes/maneger-home/maneger-ho
 
 export const routes: Routes = [
     { path: "", component: IndexComponent, children: [
-        {path:"maneger-home",component: ManegerHomeComponent, },
+        {path:"",component: ManegerHomeComponent, },
         {path:"maneger-medico",component: ManegerMedicoComponent, },
         {path:"maneger-paciente",component: ManegerPacienteComponent, }
      ] }

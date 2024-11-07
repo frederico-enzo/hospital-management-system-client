@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-brand {
+    font-weight: bold;
+}
+.form-section {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-section .form-group {
+    margin-bottom: 1.5rem;
+}
+.form-section .form-group label {
+    font-weight: bold;
+}
+.form-section .form-group input,
+.form-section .form-group select,
+.form-section .form-group textarea {
+    border-radius: 0.25rem;
+}
+.form-section .form-group .form-check-label {
+    margin-left: 0.5rem;
+}
+.form-section .btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+}
