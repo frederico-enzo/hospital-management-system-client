@@ -1,25 +1,34 @@
-<div class="sidebar" [class.collapsed]="isCollapsed">
-    <button class="toggle-btn" (click)="toggleSidebar()">
-      <i class="fas" [class.fa-angle-right]="isCollapsed" [class.fa-angle-left]="!isCollapsed"></i>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">HMS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-  
-    <ul class="sidebar-menu p-2">
-      <li (click)="navigateTo('/')">
-        <i class="fas fa-home"></i>
-        <span [ngClass]="{ 'visible': !isCollapsed }" *ngIf="!isCollapsed">Home</span>
-      </li>
-      <li (click)="navigateTo('/manegar-medico')">
-        <i class="fas fa-user-md"></i>
-        <span [ngClass]="{ 'visible': !isCollapsed }" *ngIf="!isCollapsed">Médico</span>
-      </li>
-      <li (click)="navigateTo('/manegar-paciente')">
-        <i class="fas fa-users"></i>
-        <span [ngClass]="{ 'visible': !isCollapsed }" *ngIf="!isCollapsed">Paciente</span>
-      </li>
-      <li (click)="navigateTo('/configuracoes')">
-        <i class="fas fa-cog"></i>
-        <span [ngClass]="{ 'visible': !isCollapsed }" *ngIf="!isCollapsed">Configurações</span>
-      </li>
-    </ul>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/maneger-home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/maneger-paciente">Pacientes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/maneger-medico">Médicos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Consultas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Prontuários</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Relatórios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Acesso</a>
+        </li>
+      </ul>
+    </div>
   </div>
-  
+</nav>
