@@ -1,1 +1,103 @@
-<p>maneger-paciente works!</p>
+<header class="bg-primary text-white text-center py-5">
+    <div class="container">
+        <h1 class="display-4">Cadastro de Paciente</h1>
+        <p class="lead">Preencha as informações abaixo para cadastrar um novo paciente</p>
+    </div>
+</header>
+
+<section class="py-5">
+    <div class="container">
+        <div class="form-section">
+            <form>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Digite o nome">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="sobrenome" class="form-label">Sobrenome</label>
+                        <input type="text" class="form-control" id="sobrenome" placeholder="Digite o sobrenome">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="cpf" class="form-label">CPF</label>
+                        <input type="text" class="form-control" id="cpf" placeholder="Digite o CPF">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+                        <input type="date" class="form-control" id="dataNascimento">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="genero" class="form-label">Gênero</label>
+                        <select class="form-control" id="genero">
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                            <option>Outro</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="estadoCivil" class="form-label">Estado Civil</label>
+                        <select class="form-control" id="estadoCivil">
+                            <option>Solteiro(a)</option>
+                            <option>Casado(a)</option>
+                            <option>Divorciado(a)</option>
+                            <option>Viúvo(a)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="text" class="form-control" id="telefone" placeholder="Digite o telefone">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Digite o email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <label for="endereco" class="form-label">Endereço</label>
+                        <input type="text" class="form-control" id="endereco" placeholder="Digite o endereço">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <label for="contatoEmergencia" class="form-label">Contato de Emergência</label>
+                        <input type="text" class="form-control" id="contatoEmergencia" placeholder="Digite o contato de emergência">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <label for="historicoDoenca" class="form-label">Histórico de Doenças</label>
+                        <textarea class="form-control" id="historicoDoenca" rows="3" placeholder="Digite o histórico de doenças"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <label for="alergias" class="form-label">Alergias</label>
+                        <textarea class="form-control" id="alergias" rows="3" placeholder="Digite as alergias"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="planoSaude" class="form-label">Plano de Saúde</label>
+                        <input type="text" class="form-control" id="planoSaude" placeholder="Digite o plano de saúde">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="numeroCarteirinha" class="form-label">Número da Carteirinha</label>
+                        <input type="text" class="form-control" id="numeroCarteirinha" placeholder="Digite o número da carteirinha">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
